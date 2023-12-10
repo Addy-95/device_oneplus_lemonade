@@ -32,6 +32,10 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
 
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.camera.postproc@1.0.vendor \
+    android.frameworks.stats@1.0.vendor
+
 # Dolby
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml
