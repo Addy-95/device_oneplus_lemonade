@@ -3108,7 +3108,7 @@
     </path>
 
     <path name="spkr-vi-record">
-        <ctl name="TERT_MI2S_RX_VI_FB_MUX" value="TERT_MI2S_TX" />
+        <ctl name="TERT_MI2S_TX Channels" value="Two" />
     </path>
 
     <path name="audio-with-haptics-playback handset">
