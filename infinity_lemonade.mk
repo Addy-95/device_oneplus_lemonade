@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/lemonade/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_lemonade
 PRODUCT_DEVICE := lemonade
@@ -29,3 +29,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=OnePlus9 \
     SystemDevice=OnePlus9 \
     SystemName=OnePlus9
+
+# Infinity
+INFINITY_MAINTAINER := Addy
+TARGET_SUPPORTS_BLUR := true
+WITH_GAPPS := true
+USE_MOTO_CALCULATOR := true
+INFINITY_BUILD_TYPE := UNOFFICIAL
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_SUPPORTS_QUICK_TAP := true
